@@ -443,6 +443,12 @@ footer {
   direction: rtl;
   text-align: right;
 }
+
+  .footer-container {
+  direction: rtl;
+  flex-direction: row-reverse;
+}
+
 }
 
 
