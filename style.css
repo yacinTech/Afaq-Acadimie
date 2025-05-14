@@ -425,6 +425,24 @@ footer {
   color: #0e76a8;
 }
 
+@media (max-width: 768px) {
+  .footer-container {
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+  }
+
+  .footer-container > div {
+    max-width: 100%;
+  }
+
+  .footer-logo img {
+    margin: 0 auto 10px;
+  }
+}
+
+
+
 /* السطر السفلي */
 .footer-bottom {
   margin-top: 20px;
