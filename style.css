@@ -439,6 +439,10 @@ footer {
   .footer-logo img {
     margin: 0 auto 10px;
   }
+ footer {
+  direction: rtl;
+  text-align: right;
+}
 }
 
 
