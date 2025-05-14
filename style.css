@@ -6,7 +6,7 @@
 }
 
 body {
-  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  font-family: 'Cairo', sans-serif;
   background-color: #f3f4f6;
   color: #1f2937;
   direction: rtl;
@@ -487,4 +487,64 @@ footer {
     top: 50%;
     transform: translateY(-50%);
   }
+
+
+  .footer-logo img{
+    border-radius: 50%;
+    height: 50px;
+    width: 50px;
+    cursor: pointer;
+  }
+
+  
+
+
+  
+
+
+
+
+  .whatsapp-button {
+  position: fixed;
+  bottom: 15px;
+  right: 15px; /* غيّر إلى left إذا أردت اليسار */
+  background-color: #366f4b;
+  color: white;
+  padding: 8px 14px;
+  border-radius: 50px;
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  text-decoration: none;
+  font-size: 10px;
+  font-weight: bold;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2);
+  animation: slideUp 1s ease-out, float 3s ease-in-out infinite;
+  z-index: 9999;
+  transition: transform 0.3s ease;
+}
+
+.whatsapp-button:hover {
+  transform: scale(1.08);
+}
+
+@keyframes slideUp {
+  0% {
+    transform: translateY(100px);
+    opacity: 0;
+  }
+  100% {
+    transform: translateY(0);
+    opacity: 1;
+  }
+}
+
+@keyframes float {
+  0%, 100% {
+    transform: translateY(0);
+  }
+  50% {
+    transform: translateY(-5px);
+  }
+}
 
