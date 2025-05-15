@@ -12,19 +12,66 @@
 
 
 
-   <script type="application/ld+json">
+<script type="application/ld+json">
 {
   "@context": "https://schema.org",
-  "@type": "Organization",
-  "name": "آفاق أكاديمية",
-  "url": "https://afaq-acadimie.vercel.app/",
-  "logo": "https://afaq-acadimie.vercel.app/images/logo3.jpg",
-  "description": "خدمات أكاديمية في كتابة رسائل الماجستير والدكتوراه ومشاريع التخرج تحت إشراف مختصين.",
-  "sameAs": [
-    "https://www.facebook.com/afaq.acadimie"
+  "@graph": [
+    {
+      "@type": "Organization",
+      "@id": "https://afaq-acadimie.vercel.app/#organization",
+      "name": "آفاق أكاديمية",
+      "url": "https://afaq-acadimie.vercel.app/",
+      "logo": "https://afaq-acadimie.vercel.app/images/logo3.jpg",
+      "description": "خدمات أكاديمية في كتابة رسائل الماجستير والدكتوراه ومشاريع التخرج تحت إشراف مختصين.",
+      "sameAs": [
+        "https://www.facebook.com/afaq.acadimie"
+      ]
+    },
+    {
+      "@type": "WebSite",
+      "@id": "https://afaq-acadimie.vercel.app/#website",
+      "url": "https://afaq-acadimie.vercel.app/",
+      "name": "آفاق أكاديمية",
+      "publisher": {
+        "@id": "https://afaq-acadimie.vercel.app/#organization"
+      },
+      "potentialAction": {
+        "@type": "SearchAction",
+        "target": "https://afaq-acadimie.vercel.app/?s={search_term_string}",
+        "query-input": "required name=search_term_string"
+      }
+    },
+    {
+      "@type": "Service",
+      "@id": "https://afaq-acadimie.vercel.app/#service1",
+      "serviceType": "كتابة رسائل ماجستير",
+      "provider": {
+        "@id": "https://afaq-acadimie.vercel.app/#organization"
+      },
+      "description": "خدمة كتابة رسائل ماجستير عالية الجودة تحت إشراف خبراء أكاديميين مختصين."
+    },
+    {
+      "@type": "Service",
+      "@id": "https://afaq-acadimie.vercel.app/#service2",
+      "serviceType": "كتابة رسائل دكتوراه",
+      "provider": {
+        "@id": "https://afaq-acadimie.vercel.app/#organization"
+      },
+      "description": "خدمة كتابة رسائل دكتوراه دقيقة ومتكاملة مع الالتزام بالمعايير الأكاديمية."
+    },
+    {
+      "@type": "Service",
+      "@id": "https://afaq-acadimie.vercel.app/#service3",
+      "serviceType": "تنسيق الرسائل والأبحاث",
+      "provider": {
+        "@id": "https://afaq-acadimie.vercel.app/#organization"
+      },
+      "description": "خدمة تنسيق الرسائل والأبحاث وفقًا للمعايير الأكاديمية المطلوبة."
+    }
   ]
 }
 </script>
+
 
 
   <!-- تحسين محركات البحث - Open Graph -->
